@@ -133,7 +133,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Explicit Intent
+                Intent i = new Intent(getApplicationContext(), Dokumentacja.class);
+
+
+                //sending data between activities
+                i.putExtra("id","1000");
+                startActivity(i);
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

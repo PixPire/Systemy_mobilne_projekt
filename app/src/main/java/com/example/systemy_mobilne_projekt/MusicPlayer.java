@@ -108,7 +108,7 @@ public class MusicPlayer extends AppCompatActivity {
             oneTimeOnly=1;
         }
         time_txt.setText(String.format(
-                "%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes((long)finalTime),
+                "%d min %d sec", TimeUnit.MILLISECONDS.toMinutes((long)finalTime),
                 TimeUnit.MILLISECONDS.toSeconds((long)finalTime)-
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes
                                 ((long) finalTime))
@@ -124,7 +124,7 @@ public class MusicPlayer extends AppCompatActivity {
         public void run() {
             startTime = mediaPlayer.getCurrentPosition();
             time_txt.setText(String.format(
-                    "%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes((long)startTime),
+                    "%d min %d sec", TimeUnit.MILLISECONDS.toMinutes((long)startTime),
                     TimeUnit.MILLISECONDS.toSeconds((long)startTime)-
                             TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes
                                     ((long) startTime))
