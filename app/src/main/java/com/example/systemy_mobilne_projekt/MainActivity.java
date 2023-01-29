@@ -12,12 +12,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn1;
-    Button btn2;
+
     TextView txt;
     TimePicker timePicker;
     Button setAlarm;
@@ -28,14 +26,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txt= findViewById(R.id.txt);
-        btn1=findViewById(R.id.btn);
-        btn2=findViewById(R.id.btn2);
-        Button btn3 = findViewById(R.id.buttonMusic);
-        Button btn4 = findViewById(R.id.buttonVideo);
+        Button btn1=findViewById(R.id.btnContacts);
+        Button btn2=findViewById(R.id.btnText2Speech);
+        Button btn3 = findViewById(R.id.btnMusic);
+        Button btn4 = findViewById(R.id.btnMovies);
+        Button btn5 = findViewById(R.id.btnConverter);
+        Button btn6 = findViewById(R.id.btnGoogle);
+        Button btn7 = findViewById(R.id.btnAlarm);
+        Button btn8 = findViewById(R.id.btnCountries);
+        Button btn9 = findViewById(R.id.btnWatchVideo);
+        Button btn10 = findViewById(R.id.btnDocs);
 
 
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Explicit Intent
+                Intent i = new Intent(getApplicationContext(), ConverterActivity.class);
+
+
+                //sending data between activities
+                i.putExtra("id","1000");
+                startActivity(i);
+            }
+        });
+        btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -49,7 +66,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn2.setOnClickListener(new View.OnClickListener() {
+
+
+        btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -76,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn4.setOnClickListener(new View.OnClickListener() {
+        btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -91,7 +110,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        setAlarm=findViewById(R.id.alarmbtn);
+
+
+        setAlarm=findViewById(R.id.btnAlarm);
 
         setAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,8 +125,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button b3 = findViewById(R.id.btnDate);
-        b3.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DialogFragment dialogFragment = new DatePickerFragment();

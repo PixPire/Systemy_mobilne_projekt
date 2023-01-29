@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/my_gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,73 +15,79 @@
         android:layout_height="wrap_content"
         android:background="@drawable/frame_textview_shape"
         android:fontFamily="@font/gilroy"
-        android:text="Welcome to first activity!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        android:text="Witaj we wszystko-apce!"
+        android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btn"
+    <TextView
+        android:id="@+id/txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Second Activity!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt"
-        app:layout_constraintVertical_bias="0.339" />
+        android:background="@drawable/frame_textview_shape"
+        android:fontFamily="@font/gilroy"
+        android:text="Pick Your Poison: "
+        android:textSize="24sp" />
+
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btnContacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Implicit Intent - Go to Google"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn"
-        app:layout_constraintVertical_bias="0.186" />
+        android:text="Lista Kontaktów" />
 
     <Button
-        android:id="@+id/alarmbtn"
+        android:id="@+id/btnText2Speech"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Ustaw godzine przypomnienia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+        android:text="Rozpoznaj tekst" />
 
     <Button
-        android:id="@+id/btnDate"
+        android:id="@+id/btnMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="34dp"
-        android:text="Ustaw Dzień Przypomnienia"
-        app:layout_constraintStart_toStartOf="@+id/alarmbtn"
-        app:layout_constraintTop_toBottomOf="@+id/alarmbtn" />
+        android:text="Posłuchaj Muzyki" />
 
     <Button
-        android:id="@+id/buttonMusic"
+        android:id="@+id/btnMovies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginBottom="36dp"
-        android:text="Go To MusicPlayer"
-        app:layout_constraintBottom_toTopOf="@+id/btn"
-        app:layout_constraintStart_toStartOf="@+id/btn" />
+        android:text="Lista Filmów" />
+
 
     <Button
-        android:id="@+id/buttonVideo"
+        android:id="@+id/btnConverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="20dp"
-        android:text="Go To Video"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMusic"
-        app:layout_constraintStart_toStartOf="@+id/buttonMusic" />
+        android:text="Konwerter Walut" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wygooglaj coś" />
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ustaw Alarm" />
+
+    <Button
+        android:id="@+id/btnCountries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista państw" />
+
+
+    <Button
+        android:id="@+id/btnWatchVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obejrzyj filmik" />
+
+    <Button
+        android:id="@+id/btnDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dokumentacja PDF" />
+
+</LinearLayout>
