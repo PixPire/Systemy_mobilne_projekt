@@ -39,6 +39,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Explicit Intent
+                Intent i3 = new Intent(getApplicationContext(), MusicPlayer.class);
+
+
+                //sending data between activities
+                i3.putExtra("id","1000");
+                startActivity(i3);
+            }
+        });
+
+
+
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,21 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        btn6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                //Explicit Intent
-                Intent i = new Intent(getApplicationContext(), ConverterActivity.class);
-
-
-                //sending data between activities
-                i.putExtra("id","1000");
-                startActivity(i);
-            }
-        });
-
-
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,17 +85,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DialogFragment dialogFragment = new DatePickerFragment();
+                dialogFragment.show(getSupportFragmentManager(),"Wybierz Dzień");
+            }
+        });
 
-                //Explicit Intent
-                Intent i3 = new Intent(getApplicationContext(), MusicPlayer.class);
-
-
-                //sending data between activities
-                i3.putExtra("id","1000");
-                startActivity(i3);
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i8 = new Intent(getApplicationContext(), CountryList.class);
+                startActivity(i8);
             }
         });
 
@@ -109,30 +115,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-        setAlarm=findViewById(R.id.btnAlarm);
-
-        setAlarm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Display time picker
-                DialogFragment timePickerFrag = new TimePickerFragment();
-
-                timePickerFrag.show(getSupportFragmentManager(),
-                        "Choose alarm time: ");
-            }
-        });
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFragment dialogFragment = new DatePickerFragment();
-                dialogFragment.show(getSupportFragmentManager(),"Wybierz Dzień");
-            }
-        });
-
         btn10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,6 +128,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+
     }
 
 

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Systemy_Mobilne_Projekt"
         tools:targetApi="31">
         <activity
+            android:name=".CountryList"
+            android:exported="false" />
+        <activity
             android:name=".Dokumentacja"
             android:exported="false" />
         <activity
