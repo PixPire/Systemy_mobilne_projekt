@@ -28,7 +28,7 @@ public class VideoPlayer extends AppCompatActivity {
         ytBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ADaY6THQp3Y"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=tXzt-PKipe4"));
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.setPackage("com.google.android.youtube");
                 startActivity(intent);
@@ -36,7 +36,7 @@ public class VideoPlayer extends AppCompatActivity {
         });
 
         //From local storage
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.money_history);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.maszyna_pb);
 
         MediaController mc = new MediaController(this);
         mc.setAnchorView(videoView);

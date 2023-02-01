@@ -26,10 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txt= findViewById(R.id.txt);
-        Button btn1=findViewById(R.id.btnContacts);
-        Button btn2=findViewById(R.id.btnText2Speech);
+
         Button btn3 = findViewById(R.id.btnMusic);
-        Button btn4 = findViewById(R.id.btnMovies);
+
         Button btn5 = findViewById(R.id.btnConverter);
         Button btn6 = findViewById(R.id.btnGoogle);
         Button btn7 = findViewById(R.id.btnAlarm);

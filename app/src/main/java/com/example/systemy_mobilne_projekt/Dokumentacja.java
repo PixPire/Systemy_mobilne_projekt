@@ -15,7 +15,7 @@ public class Dokumentacja extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dokumentacja);
         pdfView=findViewById(R.id.pdfView);
-        pdfView.fromAsset("kryteria_zaliczenia.pdf").load();
+        pdfView.fromAsset("plan_projektu.pdf").load();
 
     }
 

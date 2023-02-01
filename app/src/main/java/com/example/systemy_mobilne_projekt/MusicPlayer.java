@@ -73,7 +73,7 @@ public class MusicPlayer extends AppCompatActivity {
                    startTime=startTime+forwardTime;
                    mediaPlayer.seekTo((int)startTime);
                }else{
-                   Toast.makeText(MusicPlayer.this, "Can't Jump Forward!", Toast.LENGTH_SHORT).show();
+                   Toast.makeText(MusicPlayer.this, "Nie można dalej przewinąć!", Toast.LENGTH_SHORT).show();
                }
            }
        });
@@ -87,7 +87,7 @@ public class MusicPlayer extends AppCompatActivity {
                    startTime=startTime-backwardTime;
                    mediaPlayer.seekTo((int)startTime);
                }else{
-                   Toast.makeText(MusicPlayer.this, "Can't Jump Backward!", Toast.LENGTH_SHORT).show();
+                   Toast.makeText(MusicPlayer.this, "Nie można bardziej cofnąć!", Toast.LENGTH_SHORT).show();
                }
            }
        });

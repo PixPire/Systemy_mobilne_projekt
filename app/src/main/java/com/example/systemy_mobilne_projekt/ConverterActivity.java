@@ -63,6 +63,8 @@ public class ConverterActivity extends AppCompatActivity {
                     float z_acc=event.values[2];
 
                     if(x_acc>20){
+                        firstTime1=true;
+                        firstTime2=true;
                         spinner1.setSelection(randomnr());
                          spinner2.setSelection(randomnr());
                     }
@@ -84,8 +86,9 @@ public class ConverterActivity extends AppCompatActivity {
             @Override
             public void onSensorChanged(SensorEvent event) {
                 if(firstTime3==true){firstTime3=false;}else {
-                    System.out.println("IM INNNN");
 
+                    firstTime1=true;
+                    firstTime2=true;
                     spinner1.setSelection(0);
                     spinner2.setSelection(0);
                     wprowadzDane.setText("0");

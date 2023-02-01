@@ -3,9 +3,9 @@
 
 
     <gradient
-        android:centerColor="#b5179e"
-        android:endColor="#80ed99"
-        android:angle="45"
+        android:centerColor="#57cc99"
+        android:endColor="#003566"
+        android:angle="235"
         />
 
     <corners
@@ -13,6 +13,11 @@
 
     <stroke
         android:width="2dp"
-        android:color="#eeef20"/>
-
+        android:color="#001d3d"/>
+<padding
+    android:top="10dp"
+    android:bottom="10dp"
+    android:right="10dp"
+    android:left="10dp"
+    />
 </shape>

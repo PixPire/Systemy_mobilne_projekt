@@ -15,30 +15,15 @@
         android:layout_height="wrap_content"
         android:background="@drawable/frame_textview_shape"
         android:fontFamily="@font/gilroy"
-        android:text="Witaj we wszystko-apce!"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/txt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/frame_textview_shape"
-        android:fontFamily="@font/gilroy"
-        android:text="Pick Your Poison: "
+        android:text="Wybierz narzędzie"
         android:textSize="24sp" />
 
 
     <Button
-        android:id="@+id/btnContacts"
+        android:id="@+id/btnWatchVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lista Kontaktów" />
-
-    <Button
-        android:id="@+id/btnText2Speech"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rozpoznaj tekst" />
+        android:text="Obejrzyj Filmik" />
 
     <Button
         android:id="@+id/btnMusic"
@@ -47,17 +32,16 @@
         android:text="Posłuchaj Muzyki" />
 
     <Button
-        android:id="@+id/btnMovies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista Filmów" />
-
-
-    <Button
         android:id="@+id/btnConverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Konwerter Walut" />
+
+    <Button
+        android:id="@+id/btnCountries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista państw" />
 
     <Button
         android:id="@+id/btnGoogle"
@@ -69,25 +53,13 @@
         android:id="@+id/btnAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ustaw Alarm" />
-
-    <Button
-        android:id="@+id/btnCountries"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista państw" />
-
-
-    <Button
-        android:id="@+id/btnWatchVideo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Obejrzyj filmik" />
+        android:text="Kalendarz" />
 
     <Button
         android:id="@+id/btnDocs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dokumentacja PDF" />
+
 
 </LinearLayout>
