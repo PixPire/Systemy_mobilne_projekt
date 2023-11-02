@@ -1,4 +1,4 @@
-# Projekt aplikacji mobilnej wykonany na przedmiot Systemy Mobilne
+# Projekt aplikacji mobilnej wykonany na przedmiot Systemy Mobilne 2023
 
 Zbiór drobnych narzędzi-funkcjonalności:
 
